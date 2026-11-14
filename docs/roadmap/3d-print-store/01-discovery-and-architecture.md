@@ -22,7 +22,7 @@ Converter a visão de produto em arquitetura aderente à versão real do Smartst
 ## Atividades
 
 1. Inspecionar os módulos existentes (especialmente DevTools, PayPal, Shipping e OfflinePayment), seus manifests, inicialização, DI, configuração, permissões, migrations e empacotamento.
-2. Confirmar TFM/SDK/runtime suportados pelo host. O host atual está em `net10.0`; não definir `net11.0` apenas no plugin. Produzir ADR sobre compatibilidade e plano de migração coordenada, se .NET 11 for requisito incontornável.
+2. Confirmar TFM/SDK/runtime suportados pelo host. O host atual está em `net11.0`; não definir `net11.0` apenas no plugin. Produzir ADR sobre compatibilidade e plano de migração coordenada, se .NET 11 for requisito incontornável.
 3. Mapear pontos de integração com Product, ProductVariant, media, cart, checkout, Order/OrderItem, customer, ACL, taxes, shipping e admin menu. Identificar quais recursos podem ser reutilizados sem customização do core.
 4. Definir limites do módulo e namespaces. Nome proposto: `Smartstore.ThreeDPrintStore`; pasta e assembly com o mesmo nome.
 5. Definir modelo de venda: produto de catálogo pré-configurado, peça sob encomenda a partir de upload, ou ambos. O fluxo sob orçamento deve ser independente de uma simples adição ao carrinho até existir preço aprovado.

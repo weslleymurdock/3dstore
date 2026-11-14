@@ -16,7 +16,7 @@
       },
       "Microsoft.Extensions.DependencyModel/9.0.4": {
         "runtime": {
-          "lib/net9.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/net11.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "9.0.0.4",
             "fileVersion": "9.0.425.16305"
           }
