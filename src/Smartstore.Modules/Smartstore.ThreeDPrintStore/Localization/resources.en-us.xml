@@ -1,0 +1,23 @@
+﻿<Language Name="English" IsDefault="false" IsRightToLeft="false">
+    <LocaleResource Name="Plugins.FriendlyName.Smartstore.ThreeDPrintStore" AppendRootKey="false">
+        <Value>3D Print Store</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Description.Smartstore.ThreeDPrintStore" AppendRootKey="false">
+        <Value>Provides the foundation for custom 3D printing workflows.</Value>
+    </LocaleResource>
+    <LocaleResource Name="Configuration.Title">
+        <Value>3D Print Store</Value>
+    </LocaleResource>
+    <LocaleResource Name="Configuration.Description">
+        <Value>The module foundation is installed and ready for later 3D printing features.</Value>
+    </LocaleResource>
+    <LocaleResource Name="Configuration.Status">
+        <Value>Installation status</Value>
+    </LocaleResource>
+    <LocaleResource Name="Configuration.Installed">
+        <Value>The module is installed. Its technical persistence schema is available.</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Permissions.DisplayName.ThreeDPrintStore" AppendRootKey="false">
+        <Value>3D Print Store</Value>
+    </LocaleResource>
+</Language>

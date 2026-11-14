@@ -1,0 +1,13 @@
+{
+  "$schema": "../module.schema.json",
+  "Group": "Storefront",
+  "SystemName": "Smartstore.ThreeDPrintStore",
+  "FriendlyName": "3D Print Store",
+  "Description": "Provides the foundation for custom 3D printing workflows.",
+  "Icon": "hi:cube",
+  "Version": "6.4.0",
+  "MinAppVersion": "6.4.0",
+  "Author": "Weslley Murdock",
+  "Order": 100,
+  "ResourceRootKey": "Plugins.ThreeDPrintStore"
+}

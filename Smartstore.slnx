@@ -42,6 +42,7 @@
     <Project Path="src/Smartstore.Modules/Smartstore.ShippingByWeight/Smartstore.ShippingByWeight.csproj" />
     <Project Path="src/Smartstore.Modules/Smartstore.Stripe/Smartstore.Stripe.csproj" />
     <Project Path="src/Smartstore.Modules/Smartstore.Tax/Smartstore.Tax.csproj" />
+    <Project Path="src/Smartstore.Modules/Smartstore.ThreeDPrintStore/Smartstore.ThreeDPrintStore.csproj" />
     <Project Path="src/Smartstore.Modules/Smartstore.Twitter.Auth/Smartstore.Twitter.Auth.csproj" />
     <Project Path="src/Smartstore.Modules/Smartstore.WebApi/Smartstore.WebApi.csproj" />
   </Folder>

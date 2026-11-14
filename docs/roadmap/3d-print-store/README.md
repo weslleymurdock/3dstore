@@ -8,7 +8,7 @@ Este roadmap orienta agentes locais (Codex, Antigravity e Copilot). Cada stage d
 
 ## Estado inicial verificado
 
-- Repositório: `weslleymurdock/Smartstore`; branch de trabalho: `feat/3d-store`.
+- Repositório: `weslleymurdock/3dstore`; branch de desenvolvimento: `feat/3d-store`.
 - A branch `feat/3d-store` existia e apontava para o mesmo commit de `main` no momento da criação deste roadmap.
 - Smartstore está na versão `6.4.0`; `src/Smartstore.Build/Smartstore.Common.props` define `TargetFramework=net11.0`.
 - Os módulos são bibliotecas Razor em `src/Smartstore.Modules/<Name>`, usam `module.json`, `Module.cs` e `Startup.cs`, e são carregados de `src/Smartstore.Web/Modules` (saída de build, nunca editar).
@@ -17,11 +17,9 @@ Este roadmap orienta agentes locais (Codex, Antigravity e Copilot). Cada stage d
 
 ## Regra de compatibilidade .NET
 
-O pedido de produto menciona .NET 11, mas o host verificado nesta branch compila em `net11.0`. Um módulo carregado no processo do Smartstore precisa ser compatível com o runtime e com as assemblies do host. Portanto:
-1. Não criar um módulo `net11.0` isolado enquanto o host permanecer em `net11.0`.
-2. No Stage 01, verificar a versão oficial e o suporte do SDK/runtime disponível, o target framework do host e a política de compatibilidade do Smartstore.
-3. Implementar o módulo no mesmo TFM do host atual (`net11.0`) para manter integração executável; planejar eventual migração coordenada do host e módulo para .NET 11 como trabalho separado, caso o usuário confirme que o fork deve migrar integralmente.
-4. Não alterar o TFM global, SDK, dependências centrais ou projetos do host como efeito colateral do plugin.
+O host verificado nesta branch compila em `net11.0`, com o baseline .NET 11. Um módulo carregado no processo do Smartstore precisa ser compatível com o runtime e com as assemblies do host. Portanto:
+1. Implementar o módulo no mesmo TFM do host (`net11.0`) para manter integração executável.
+2. Não alterar o TFM global, SDK, dependências centrais ou projetos do host como efeito colateral do plugin.
 
 ## Princípios obrigatórios
 
