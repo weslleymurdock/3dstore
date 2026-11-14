@@ -41,14 +41,14 @@ The module should remain a modular monolith initially. Long-running analysis and
 2. Stage 03 adds material, printer, profile, and administrative master data.
 3. Stage 04 adds upload, quarantine, storage, checksum, validation, and derivative lifecycle.
 4. Stage 05 adds a locally packaged viewer integration after dependency/licensing approval.
-5. Stage 06 adds format adapters, geometric analysis, and isolated slicer adapters.
+5. Stage 06 adds format adapters, geometric analysis, and isolated slicer adapters. The default engine priority is Bambu Studio, PrusaSlicer, then Creality Print for Ender/Creality compatibility; eligibility is governed by explicit printer/material/process/profile compatibility.
 6. Stage 07 adds pricing and quote snapshots.
 7. Stage 08 integrates approval with native cart/checkout/order behavior.
 8. Stages 09–12 add production, inventory, operations, reporting, security hardening, and release validation.
 
 ## Evidence boundary
 
-The recommendations are grounded in the repository sources and mandatory `dev-docs/` pages. External references used for technology evaluation are linked in [technology-evaluation.md](./technology-evaluation.md). Parser/slicer package selection remains open until a proof of concept verifies format fidelity, license compatibility, sandboxing, and deployment behavior.
+The recommendations are grounded in the repository sources and mandatory `dev-docs/` pages. External references used for technology evaluation are linked in [technology-evaluation.md](./technology-evaluation.md). Bambu Studio is the product-priority runtime, but its production worker suitability is not yet validated: official issue evidence reports display initialization failures in some headless Linux/AppImage scenarios. PrusaSlicer is the secondary fallback. Creality Print is the initial tertiary Ender/Creality candidate, with CuraEngine retained as a future alternative. Parser/slicer package selection remains open until a proof of concept verifies format fidelity, license compatibility, sandboxing, preset fidelity, and deployment behavior.
 
 ## Stage 01 acceptance statement
 

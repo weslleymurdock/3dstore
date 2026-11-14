@@ -27,7 +27,7 @@ Converter a visão de produto em arquitetura aderente à versão real do Smartst
 4. Definir limites do módulo e namespaces. Nome proposto: `Smartstore.ThreeDPrintStore`; pasta e assembly com o mesmo nome.
 5. Definir modelo de venda: produto de catálogo pré-configurado, peça sob encomenda a partir de upload, ou ambos. O fluxo sob orçamento deve ser independente de uma simples adição ao carrinho até existir preço aprovado.
 6. Definir formatos iniciais e política de suporte. Avaliar STL, 3MF, OBJ/MTL, AMF e formatos adicionais; especificar unidades, orientação, materiais externos, limites e validação. Não declarar suporte sem parser/preview/slicer compatíveis.
-7. Avaliar viewer web (por exemplo Three.js) e slicer/engine (por exemplo PrusaSlicer/OrcaSlicer/engine equivalente), licenças, execução headless, containers, plataformas e distribuição. Não assumir que biblioteca de visualização calcula tempo/material.
+7. Avaliar viewer web (por exemplo Three.js) e slicer/engine pela hierarquia de produto Bambu Studio → PrusaSlicer → solução de slicing para o ecossistema Ender/Creality (inicialmente Creality Print; CuraEngine como alternativa futura), incluindo licenças, execução headless, containers, plataformas, perfis e distribuição. OrcaSlicer não é runtime prioritário. Não assumir que biblioteca de visualização calcula tempo/material.
 8. Definir armazenamento de originais, derivados, thumbnails e relatórios; política de retenção, quotas, antivírus e autorização.
 9. Modelar os bounded contexts: Catalog/ModelAssets, Quoting, Materials, Printers, Production, Inventory e Integration.
 10. Criar ADRs para: compatibilidade runtime; estratégia de armazenamento; engine de slicing; viewer; integração comercial; unidades e conversões; estratégia de migrations.
