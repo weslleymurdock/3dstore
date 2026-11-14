@@ -35,7 +35,7 @@ public sealed class ThreeDPrintStorePermissionProvider : IPermissionProvider
                 CustomerRoleSystemName = SystemCustomerRoleNames.Administrators,
                 PermissionRecords = new[]
                 {
-                    new PermissionRecord { SystemName = ThreeDPrintStorePermissions.Self }
+                    new PermissionRecord { SystemName = ThreeDPrintStorePermissions.Read }
                 }
             }
         };
